@@ -4,7 +4,7 @@ name: Deploy to GitHub Pages
 #  triggers the workflow when a push is made to the main branch
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 # permissions needed for this workflow:
 #    - 'contents:read' allows actions to read repository contents
@@ -23,13 +23,13 @@ jobs:
     steps:
       # checkout the repository
       - uses: actions/checkout@v4
-      
+
       # setup node.js v20
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          
+
       # install dependencies using npm ci (clean install, reccomended for CI environments)
       - name: Install dependencies
         run: npm ci
@@ -37,7 +37,7 @@ jobs:
       # run the build script defined in package.json (e.g., npm run build)
       - name: Build
         run: npm run build
-        
+
       # upload the output of the build process as an artifact named 'pages-artifact' for passing build output to next job
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -59,4 +59,4 @@ jobs:
       # deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4

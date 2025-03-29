@@ -28,14 +28,14 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-                {/* this is the logo */}
+              {/* this is the logo */}
               <Link href="/" className="text-xl font-bold text-gray-800">
                 Portfolio
               </Link>
             </div>
             {/* this is the navigation items */}
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              {navItems.map((item) => (
+              {navItems.map(item => (
                 <Link
                   key={item.path}
                   href={item.path}
@@ -56,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

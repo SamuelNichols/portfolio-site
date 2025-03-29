@@ -3,7 +3,8 @@ export default function Projects() {
   const projects = [
     {
       title: 'Secure E-commerce Platform',
-      description: 'Built a full-stack e-commerce platform with advanced security features including OAuth2, JWT, and PCI compliance.',
+      description:
+        'Built a full-stack e-commerce platform with advanced security features including OAuth2, JWT, and PCI compliance.',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       link: '#',
     },
@@ -27,23 +28,22 @@ export default function Projects() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Projects</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            A selection of projects showcasing my expertise in software development and cybersecurity.
+            A selection of projects showcasing my expertise in software development and
+            cybersecurity.
           </p>
         </div>
 
         {/* mapping the projects */}
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {projects.map((project) => (
+          {projects.map(project => (
             <article key={project.title} className="flex flex-col items-start">
               <div className="w-full">
                 <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-900">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-base leading-7 text-gray-600">
-                  {project.description}
-                </p>
+                <p className="mt-2 text-base leading-7 text-gray-600">{project.description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
+                  {project.technologies.map(tech => (
                     <span
                       key={tech}
                       className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
@@ -67,4 +67,4 @@ export default function Projects() {
       </div>
     </div>
   );
-} 
+}

@@ -1,6 +1,6 @@
 // this is the about page component
 // the general design is a white background with a gray border on the top
-// the general content is a section with a title, a subtitle, and a list 
+// the general content is a section with a title, a subtitle, and a list
 // I will later format this according to my resume and projects
 export default function About() {
   return (
@@ -9,9 +9,9 @@ export default function About() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            I am a software engineer with a passion for cybersecurity and building secure applications.
-            With years of experience in full-stack development, I focus on creating robust and
-            maintainable solutions while ensuring security best practices.
+            I am a software engineer with a passion for cybersecurity and building secure
+            applications. With years of experience in full-stack development, I focus on creating
+            robust and maintainable solutions while ensuring security best practices.
           </p>
         </div>
 
@@ -21,9 +21,10 @@ export default function About() {
               <dt className="text-base font-semibold leading-7 text-gray-900">Experience</dt>
               <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                 <p className="flex-auto">
-                  • Senior Software Engineer at Tech Company (2020-Present)<br />
-                  • Full Stack Developer at Startup (2018-2020)<br />
-                  • Junior Developer at Agency (2016-2018)
+                  • Senior Software Engineer at Tech Company (2020-Present)
+                  <br />
+                  • Full Stack Developer at Startup (2018-2020)
+                  <br />• Junior Developer at Agency (2016-2018)
                 </p>
               </dd>
             </div>
@@ -31,9 +32,10 @@ export default function About() {
               <dt className="text-base font-semibold leading-7 text-gray-900">Education</dt>
               <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                 <p className="flex-auto">
-                  • BS in Computer Science<br />
-                  • Cybersecurity Certifications<br />
-                  • Continuous Learning
+                  • BS in Computer Science
+                  <br />
+                  • Cybersecurity Certifications
+                  <br />• Continuous Learning
                 </p>
               </dd>
             </div>
@@ -41,11 +43,14 @@ export default function About() {
               <dt className="text-base font-semibold leading-7 text-gray-900">Skills</dt>
               <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                 <p className="flex-auto">
-                  • Full Stack Development<br />
-                  • Security Best Practices<br />
-                  • Cloud Architecture<br />
-                  • CI/CD<br />
-                  • Agile Methodologies
+                  • Full Stack Development
+                  <br />
+                  • Security Best Practices
+                  <br />
+                  • Cloud Architecture
+                  <br />
+                  • CI/CD
+                  <br />• Agile Methodologies
                 </p>
               </dd>
             </div>
@@ -54,4 +59,4 @@ export default function About() {
       </div>
     </div>
   );
-} 
+}

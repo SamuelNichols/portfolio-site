@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-            {/* this is the copyright text */}
+          {/* this is the copyright text */}
           <div className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Samuel Nichols. All rights reserved.
           </div>
@@ -31,10 +31,7 @@ const Footer = () => {
             >
               LinkedIn
             </a>
-            <a
-              href="mailto:samnichols314@gmail.com"
-              className="text-gray-400 hover:text-gray-500"
-            >
+            <a href="mailto:samnichols314@gmail.com" className="text-gray-400 hover:text-gray-500">
               Email
             </a>
           </div>
@@ -44,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

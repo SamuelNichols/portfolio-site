@@ -15,8 +15,8 @@ export default function Home() {
               Software Engineer & Cybersecurity Specialist
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Passionate about building secure and efficient software solutions.
-              Specializing in full-stack development and cybersecurity practices.
+              Passionate about building secure and efficient software solutions. Specializing in
+              full-stack development and cybersecurity practices.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -25,10 +25,7 @@ export default function Home() {
               >
                 View Projects
               </a>
-              <a
-                href="/contact"
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
+              <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
                 Contact Me <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -43,15 +40,13 @@ export default function Home() {
       <div className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">
-              Expertise
-            </h2>
+            <h2 className="text-base font-semibold leading-7 text-indigo-600">Expertise</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               What I Do
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Combining software engineering expertise with cybersecurity best practices
-              to create robust and secure applications.
+              Combining software engineering expertise with cybersecurity best practices to create
+              robust and secure applications.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -59,17 +54,19 @@ export default function Home() {
               {[
                 {
                   title: 'Software Development',
-                  description: 'Full-stack development with modern technologies and best practices.',
+                  description:
+                    'Full-stack development with modern technologies and best practices.',
                 },
                 {
                   title: 'Cybersecurity',
-                  description: 'Security-first approach to application development and system design.',
+                  description:
+                    'Security-first approach to application development and system design.',
                 },
                 {
                   title: 'Problem Solving',
                   description: 'Analytical mindset for tackling complex technical challenges.',
                 },
-              ].map((feature) => (
+              ].map(feature => (
                 <div key={feature.title} className="flex flex-col">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
                     {feature.title}
