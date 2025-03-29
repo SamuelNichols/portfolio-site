@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 // this is the home page component
 // the general design is a white background with a gray border on the top
 // the general content is a hero section with a title, a subtitle, and a button
