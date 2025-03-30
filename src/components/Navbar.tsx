@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -49,6 +50,11 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
+          </div>
+          
+          {/* Dark mode toggle in the right side of navbar */}
+          <div className="flex items-center">
+            <DarkModeToggle />
           </div>
         </div>
       </div>
