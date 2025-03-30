@@ -3,20 +3,17 @@
 // the general content is a hero section with a title, a subtitle, and a button
 export default function Home() {
   return (
-    <div className="bg-white">
-      {/* Hero Section: above the fold content 
-       general design is a white background with a gray border on the top
-       general content is a hero section with a title, a subtitle, and a button
-      */}
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+    <main className="flex-1 bg-white">
+      {/* Hero Section */}
+      <div className="relative isolate px-6 pt-4">
+        <div className="mx-auto max-w-2xl py-16">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Software Engineer & Cybersecurity Specialist
+              Hi, I'm Sam 👋
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Passionate about building secure and efficient software solutions. Specializing in
-              full-stack development and cybersecurity practices.
+              I'm a Software Engineer based in Tokyo, passionate about AI and backend development. 
+              I love building scalable systems and exploring new technologies, especially in the AI/ML space.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -26,45 +23,42 @@ export default function Home() {
                 View Projects
               </a>
               <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
-                Contact Me <span aria-hidden="true">→</span>
+                Let's Connect <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Highlights Section: this is the section below the hero section
-       general design is a gray background with a white border on the top
-       general content is a section with a title, a subtitle, and a list of features
-      */}
-      <div className="bg-gray-50 py-24 sm:py-32">
+      {/* Highlights Section */}
+      <div className="bg-gray-50 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">Expertise</h2>
+            <h2 className="text-base font-semibold leading-7 text-indigo-600">What I Love Doing</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              What I Do
+              My Focus Areas
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Combining software engineering expertise with cybersecurity best practices to create
-              robust and secure applications.
+              I enjoy tackling complex challenges and turning ideas into reality through code. 
+              Here's what I'm currently excited about:
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <div className="mx-auto mt-16 max-w-2xl lg:mt-16 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {[
                 {
-                  title: 'Software Development',
+                  title: 'Backend Systems',
                   description:
-                    'Full-stack development with modern technologies and best practices.',
+                    'I build robust and scalable backend systems, with a focus on microservices and efficient data pipelines.',
                 },
                 {
-                  title: 'Cybersecurity',
+                  title: 'AI & Machine Learning',
                   description:
-                    'Security-first approach to application development and system design.',
+                    'Currently exploring AI applications in software, particularly interested in generative AI and evolutionary computation.',
                 },
                 {
-                  title: 'Problem Solving',
-                  description: 'Analytical mindset for tackling complex technical challenges.',
+                  title: 'Cloud Solutions',
+                  description: 'Working with modern cloud technologies to create efficient, scalable architectures.',
                 },
               ].map(feature => (
                 <div key={feature.title} className="flex flex-col">
@@ -80,6 +74,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
